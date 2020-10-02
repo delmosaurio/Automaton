@@ -1,4 +1,7 @@
 #include "Atm_led.hpp"
+#ifdef ESP32
+#include <analogWrite.h>
+#endif
 
 Atm_led& Atm_led::begin( int attached_pin, bool activeLow ) {
   // clang-format off

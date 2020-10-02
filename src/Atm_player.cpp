@@ -1,4 +1,7 @@
 #include "Atm_player.hpp"
+#ifdef ESP32
+#include <Tone32.h>
+#endif
 
 /* Add optional parameters for the state machine to begin()
  * Add extra initialization code

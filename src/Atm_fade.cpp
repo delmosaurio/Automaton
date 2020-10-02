@@ -1,4 +1,8 @@
 #include "Atm_fade.hpp"
+#ifdef ESP32
+#include <Tone32.h>
+#include <analogWrite.h>
+#endif
 
 Atm_fade& Atm_fade::begin( int attached_pin ) {
   // clang-format off
